@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="overlay"></div>
+  </header>
+
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light blue-grey lighten-5 mb-4 navbarstyle">
+    <a class="navbar-brand nav-link login-modal" type="button" href="#">Get Started</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Ingredients</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item ingredientsOption" href="#"></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Glasses</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item glassesOption" href="#"></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Categories</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item categoriesOption" href="#"></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Filters</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item filterOption" href="#"></a>
+          </div>
+        </li>
+      </ul>
+      <!-- Links -->
+
+      <!-- Search form -->
+      <ul class="navbar-nav mr-auto profilebtn">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Profile</a>
+          <div class="dropdown-menu dropdown-primary listItems" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Pinned Recipes</a>
+            <a class="dropdown-item" href="#">Followers</a>
+            <a class="dropdown-item" href="#">Recent Activity</a>
+            <a class="dropdown-item" href="#">Messages</a>
+            <a class="dropdown-item" href="#">Settings</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Collapsible content -->
+  </nav>
+  <!--/.Navbar-->
+  <div class="row try">
+    <div class="col-md-12 intro-pic">
+      <div class="searchBar-pic">
+        <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+          <input class="form-control form-control-sm ml-3 w-75" id="userInput" type="text"
+            placeholder="Search a cocktail or ingredient" aria-label="Search">
+          <i class="fas fa-search searchBtn btn" aria-hidden="true" id="search"></i>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Body Content-->
+  <div class="container contain">
+    <div class="row intro">
+      <div class="col-md-12">
+      </div>
+    </div>
+    <div class="row intro-text">
+      <div class="col-md-12">
+        <h1 class="title"> The Cocktail Club </h1>
+        <div class="line-one"></div>
+      </div>
+      <div class="row body-first">
+        <button type="button" class="btn btn-default btn-sm refreshBtn">
+          <span class="glyphicon glyphicon-refresh"></span> Refresh
+        </button>
+        <div class="col-md-12 content-first">
+          <p class="content-first-text">Random Drink of the Day</p>
+          <div class="line"></div>
+          <div class="content-first-body"> </div>
+        </div>
+      </div>
+      <div class="row body-second">
+        <div class="col-md-6 leftsideTwo">
+          <h3 class="leftsideTextTwo">Pinned Drinks</h3>
+          <div class="line"></div>
+        </div>
+        <div class="col-md-6 rightsideTwo">
+          <p class="rightsideTextTwo">Submit a Recipe</p>
+          <div class="line"></div>
+
+          <!--Start submit recipe content-->
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Cocktail Name</label>
+              <input type="email" class="form-control" id="cocktailName">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Ingredients</label>
+              <textarea class="form-control" id="cocktailIngredients" rows="3"></textarea>
+            </div>
+          </form>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Directions</label>
+            <textarea class="form-control" id="cocktailDirections" rows="3"></textarea>
+          </div>
+          </form>
+          <!--End submit recipe content-->
+
+          <!--submit recipe button-->
+          <button type="button" class="btn btn-outline-warning" id="submitRecipe" data-toggle="modal"
+            data-target="#exampleModal">Submit</button>
+          <!--show user submissions button-->
+          <button type="button" class="btn btn-outline-warning" id="userRecipes">View User Submissions</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!--submit recipe modal-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Thank You</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Your drink was saved!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row body-third">
+      <div class="col-md-12 reviewDiv">
+        <p class="rightsideTextTwo">Recent Reviews</p>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+  <!--End Body content-->
+
+  <!--Start model login content-->
+  <div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="exit" data-dismiss="modal">&times;</button>
+            <p class="modal-title">Please Login
+            <p>
+          </div>
+          <div class="modal-body">
+            <div class="row username">
+              <div class="col-md-4">
+                <p>Username:</p>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="usr">
+
+              </div>
+            </div>
+            <div class="row password">
+              <div class="col-md-4">
+                <p>Password:</p>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="usr">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-4 sign">
+                <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2 submit signUp"
+                  type="submit">SignUp</button>
+              </div>
+              <div class="col-md-8">
+                <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2 submit" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End modal login content-->
+
+  <!--Start Modal Content for Sign up-->
+  <div class="container">
+    <div class="modal fade" id="signUpModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="exit" data-dismiss="modal">&times;</button>
+            <p class="modal-title">Please SignUp
+            <p>
+          </div>
+          <div class="modal-body">
+            <div class="row username">
+              <div class="col-md-4">
+                <p>Username:</p>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="usr">
+
+              </div>
+            </div>
+            <div class="row password">
+              <div class="col-md-4">
+                <p>Password:</p>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="password">
+              </div>
+            </div>
+            <div class="row re-password">
+              <div class="col-md-4">
+                <p>Re-Enter Password:</p>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="password">
+              </div>
+            </div>
+            <div class="row email">
+              <div class="col-md-4">
+                <p>Email:</p>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="password">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2 submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2 submit" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End Modal Sign Up-->
+  <!--Start Search Content Modal-->
+  <div class="container">
+    <div class="modal fade" id="contentModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="exit" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Name:</h3>
+            <h5 class="drinknameModal"></h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <p>PHOTO HERE</p>
+              </div>
+              <div class="col-md-8">
+                <div class="photoModal"></div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <p>Directions:</p>
+              </div>
+              <div class="col-md-8">
+                <p class="directionsModal"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <p>Ingredients:</p>
+                <ul>
+                  <li class="ingModalOne"></li>
+                  <li class="ingModalTwo"></li>
+                  <li class="ingModalThree"></li>
+                </ul>
+              </div>
+              <div class="row re-password">
+                <div class="col-md-4">
+                  <p>Ingredients:</p>
+                </div>
+                <div class="col-md-8">
+                  <p class="ingredientsModal"></p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="row">
+                <button type="button" class="btn btn-outline-warning" type="submit">Save!</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--End search content modal-->
+
+    <!--Footer Content-->
+    <div class="row footer">
+      <div class="col-md-12">
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4 foot">
+          <div class="container text-center text-md-left">
+            <div class="row">
+              <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- API list -->
+                <h5 class="font-weight-bold text-uppercase mb-4">This website was made possible using the beautiful The
+                  Cocktail DB</h5>
+              </div>
+              <!-- Grid column -->
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Members -->
+                <h5 class="font-weight-bold text-uppercase mb-4">MEMBERS</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <p> Logan McCann </p>
+                  </li>
+                  <li>
+                    <p> Juan Osorio </p>
+                  </li>
+                  <li>
+                    <p> Samantha Barrueta </p>
+                  </li>
+                  <li>
+                    <p> Prince Kumar </p>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Contact details -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <p>
+                      <i class="fas fa-home mr-3"></i> Chicago, IL, 60605</p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-envelope mr-3"></i> abc.gmail.com</p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-phone mr-3"></i> 1-(234)-567-8910</p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-print mr-3"></i> 1-(234)-567-8910</p>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+                <!-- Social buttons -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+                <ul>
+                  <li class="logan">
+                    <a class="github-button" href="https://github.com/lrmccann"
+                      data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large"
+                      data-show-count="true" aria-label="Follow @lrmccann on GitHub">Follow @lrmccann</a>
+                  </li>
+                  <li class="juan">
+                    <a class="github-button" href="https://github.com/juanwithouttheotter"
+                      data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large"
+                      data-show-count="true" aria-label="Follow @juanwithouttheotter on GitHub">Follow
+                      @juanwithouttheotter</a>
+                  </li>
+                  <li class="sam">
+                    <a class="github-button" href="https://github.com/samanthabarrueta"
+                      data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large"
+                      data-show-count="true" aria-label="Follow @samanthabarrueta on GitHub">Follow
+                      @samanthabarrueta</a>
+                  </li>
+                  <li class="prince">
+                    <a class="github-button" href="https://github.com/kumarprince3"
+                      data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large"
+                      data-show-count="true" aria-label="Follow @kumarprince3 on GitHub">Follow @kumarprince3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- END Footer Content-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script src="./assets/index.js"></script>
+    <script src="./assets/index2.js"></script>
+</body>

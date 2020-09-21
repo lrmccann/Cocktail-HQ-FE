@@ -1,0 +1,346 @@
+/* universal selector for body */
+body{
+    height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0) 30%, rgb(255, 219, 119) 60%);
+    overflow-x: hidden;
+};
+
+/* head of page */
+header{
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+}
+.title{
+margin-bottom: 5%;
+margin-top: 3%;
+}
+
+.intro{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+
+ }
+.contain{
+    width: 100%;
+    float: center;
+}
+ .intro-pic{
+     background-image: url("../images/intro-use.jpg");
+     background-size: cover;
+     height: 500px;
+     width: 100%;
+     border: black groove 1px;
+     align-self: center;
+     margin-bottom: -20%;
+     margin-top: -1.6%;
+     
+ }
+ .intro-text{
+     text-align: center;
+ }
+ .line-one{
+     border: groove 1px black;
+     margin-left: 30%;
+     margin-right: 30%;
+     margin-bottom: 5%;
+ }
+ /* end of head content */
+
+
+ /* Nav-bar */
+.navbarstyle{
+    padding-right: 3%;
+    position: relative;
+    border: black 1px solid;
+    width: 100%;
+    background-color: white;
+}
+.ingredientsOption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.glassesOption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.categoriesOption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.filterOption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dropdown-item{
+    border-bottom: solid black 1px;
+}
+
+.searchBar-pic{
+    margin:0 auto;
+    display: block;
+    margin-top: 13%;
+    }
+.searchBtn{
+    border: solid black 1px;
+    background-color: white;
+}
+    
+.profilebtn{
+    float: right;
+    margin-left: 55%;
+}
+
+.go{
+    float: left;
+    border: groove black 1px;
+}
+
+ /* end Nav-bar */
+
+ /* some body attributes */
+.content-first{
+    border: groove black 1px;
+    height: 360px;
+    background-color: white;
+    width: 100%;
+    overflow: auto;
+}
+.refreshBtn{
+    float: right;
+    border: solid black 1px;
+}
+.drinksForDiv{
+    height: 80%;
+    width: 30%;
+    padding-left: 8%;
+    float: left;
+}
+.divDrinkHeading{
+    padding-bottom: 2%;
+}
+.drinknameModal{
+    text-align: left;
+}
+.pinnedDiv{
+    border: solid rgb(240, 220, 39) 1px;
+}
+.content-first-text{
+    text-align: center;
+    font-size: large;
+}
+.pinnedDrinks{
+    margin-top: 3%;
+}
+.drinksForDivTextContent{
+    padding-left: 1%;
+    float: left;
+}
+    /* second set of containers */
+    .body-second{
+    height: 500px;
+    margin-bottom: 2%;
+    width: 100%;
+    }
+    .line{
+    border: black 1px solid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    }
+    .leftsideTwo{
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    margin-top: 1%;
+    border: black groove 1px;
+    background-color: white;
+    }
+    .rightsideTwo{
+    float: left;
+    margin-top: 1%;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: black groove 1px;
+    background-color: white;
+    }
+    .body-third{
+        width: 100%;
+        float: left;
+    }
+    .reviewDiv{
+        height: 500px;
+        overflow: auto;
+        text-align: center;
+        background-color: white;
+        border: groove black 1px;
+        margin-bottom: 2%;
+    }
+    .review-card{
+        border: black solid 1px;
+        margin-top: 1%;
+        background-color: white;
+        margin-left: 1%;
+    }
+    .review-user{
+        padding-left: 45%;
+        margin: 0 auto;
+        border-bottom: black solid 1px;
+    }
+    .review-rate{
+        padding-left: 3%;
+    }
+    .review-cocktail{
+    padding-left:3% ;
+    }
+
+    .leftsideTextTwo{
+    text-align: center;
+    font-size: large;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    }
+    .rightsideTextTwo{
+    text-align: center;
+    font-size: large;
+    padding-top: 5%;
+    }
+    .saved{
+    border: solid black 1px;
+    text-align: left;
+    margin-left: 1%;
+    }
+    .imgModal{
+        height: 100px;
+        width: 100px;
+    }
+    .pinnedText{
+        text-align: center;
+        padding-top: 1%;
+    }
+    /* End body attributes
+
+
+ /* Modal Login Content */
+ .login-modal{
+     border: groove black 1px;
+
+ }
+.modal-title{
+     text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+ }
+.submit{
+border: black groove 1px;
+}
+
+.exit{
+    border: 1px groove black;
+    float: right;
+}
+
+ /* End Modal Login Content */
+
+ /* Modal Sign up Content */
+.signUp{
+    text-align: center;
+    margin-right: 10%;
+    border: black solid 1px
+
+}
+
+ /* End Modal Sign Up
+
+ /* Search Modal */
+.ingModalOne{
+float: left;
+}
+.ingModalTwo{
+float: left;
+}
+.ingModalThree{
+float: left;
+}
+ /* End Search Modal    */
+
+/* footer attributes */
+.footer{
+    margin-left: .5%;
+    width: 100%;
+    height:auto;
+    border: groove 1px black;
+    background-color: white;
+}
+
+/* Section for unordered list attributes */ 
+.API-1{
+    border-bottom: 5%;
+}
+.API-2{
+    border-bottom: 5%;
+}
+.API-3{
+    border-bottom: 5%;
+}
+/* GitHub spacing for buttons */
+ .logan{
+	list-style-type: none;
+	 margin-bottom: 8%;
+ }
+ .juan{
+	list-style-type: none;
+	margin-bottom: 8%;
+}
+.sam{
+	list-style-type: none;
+	margin-bottom: 8%;
+}
+.prince{
+	list-style-type: none;
+}
+
+
+/* Rating Images */
+.glass-00{
+    content: url('../images/glass-00.png');
+    background-size: cover;
+    height: 1%;
+    width: 1%;
+    border: rgba(0, 0, 0, 0.432) groove 1px;
+    align-self: center;
+}
+
+.glass-30{
+    content: url('../images/glass-30.png');
+    background-size: cover;
+    height: 1%;
+    width: 1%;
+    border: rgba(0, 0, 0, 0.432) groove 1px;
+    align-self: center;
+}
+
+.glass-60{
+    content: url('../images/glass-60.png');
+    background-size: cover;
+    height: 1%;
+    width: 1%;
+    border: rgba(0, 0, 0, 0.432) groove 1px;
+    align-self: center;
+}
+
+.glass-100{
+    content: url('../images/glass-100.png');
+    background-size: cover;
+    height: 1%;
+    width: 1%;
+    border: rgba(0, 0, 0, 0.432) groove 1px;
+    align-self: center;
+}
