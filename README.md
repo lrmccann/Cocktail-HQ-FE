@@ -4,7 +4,7 @@ Cocktail HQ is your one stop shop to finding everything cocktail! Collaborating 
 ---
 
 ## Build Status
-Travis CI badge here
+![GitHub language count](https://img.shields.io/badge/build-passing-brightgreen)
 
 ---
 
