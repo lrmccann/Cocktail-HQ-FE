@@ -30,6 +30,9 @@ quick link: https://lrmccann.github.io/Cocktail-HQ-FE/
 ---
 
 ## Credits
+- Logan McCann
+- Juan Osiris
+- Samantha Buerrete
 
 ---
 
